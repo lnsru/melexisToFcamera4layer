@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name melexisToFcamera4layer-rescue)(type Legacy)(uri ${KIPRJMOD}/melexisToFcamera4layer-rescue.lib)(options "")(descr ""))
+)
