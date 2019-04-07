@@ -2055,8 +2055,6 @@ F 3 "" H 2000 8750 50  0001 C CNN
 	1    2000 8750
 	0    -1   -1   0   
 $EndComp
-Text Notes 14400 400  0    60   ~ 0
-Optional CEC!
 Text Label 9350 6200 2    60   ~ 0
 LEDN
 Text Label 9350 6300 2    60   ~ 0
