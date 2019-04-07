@@ -1,7 +1,8 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:melexisToFcamera4layer-cache
+EELAYER 29 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -14,51 +15,909 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Mechanical:Mounting_Hole_PAD MK1
+L melexisToFcamera4layer-rescue:Mounting_Hole_PAD-Mechanical MK1
 U 1 1 5867217E
-P 4200 7200
-F 0 "MK1" H 4300 7246 50  0000 L CNN
-F 1 "Mounting_Hole" H 4300 7155 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 4200 7200 60  0001 C CNN
-F 3 "" H 4200 7200 60  0001 C CNN
-	1    4200 7200
+P 10200 10800
+F 0 "MK1" H 10300 10846 50  0000 L CNN
+F 1 "Mounting_Hole" H 10300 10755 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 10200 10800 60  0001 C CNN
+F 3 "" H 10200 10800 60  0001 C CNN
+	1    10200 10800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK3
+L melexisToFcamera4layer-rescue:Mounting_Hole_PAD-Mechanical MK3
 U 1 1 58672295
-P 5100 7200
-F 0 "MK3" H 5200 7246 50  0000 L CNN
-F 1 "Mounting_Hole" H 5200 7155 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 5100 7200 60  0001 C CNN
-F 3 "" H 5100 7200 60  0001 C CNN
-	1    5100 7200
+P 11100 10800
+F 0 "MK3" H 11200 10846 50  0000 L CNN
+F 1 "Mounting_Hole" H 11200 10755 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 11100 10800 60  0001 C CNN
+F 3 "" H 11100 10800 60  0001 C CNN
+	1    11100 10800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK2
+L melexisToFcamera4layer-rescue:Mounting_Hole_PAD-Mechanical MK2
 U 1 1 586722B5
-P 4200 7450
-F 0 "MK2" H 4300 7496 50  0000 L CNN
-F 1 "Mounting_Hole" H 4300 7405 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 4200 7450 60  0001 C CNN
-F 3 "" H 4200 7450 60  0001 C CNN
-	1    4200 7450
+P 10200 11050
+F 0 "MK2" H 10300 11096 50  0000 L CNN
+F 1 "Mounting_Hole" H 10300 11005 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 10200 11050 60  0001 C CNN
+F 3 "" H 10200 11050 60  0001 C CNN
+	1    10200 11050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole_PAD MK4
+L melexisToFcamera4layer-rescue:Mounting_Hole_PAD-Mechanical MK4
 U 1 1 5867236D
-P 5100 7450
-F 0 "MK4" H 5200 7496 50  0000 L CNN
-F 1 "Mounting_Hole" H 5200 7405 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 5100 7450 60  0001 C CNN
-F 3 "" H 5100 7450 60  0001 C CNN
-	1    5100 7450
+P 11100 11050
+F 0 "MK4" H 11200 11096 50  0000 L CNN
+F 1 "Mounting_Hole" H 11200 11005 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380" H 11100 11050 60  0001 C CNN
+F 3 "" H 11100 11050 60  0001 C CNN
+	1    11100 11050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4200 7300
-NoConn ~ 5100 7300
-NoConn ~ 5100 7550
-NoConn ~ 4200 7550
+NoConn ~ 10200 10900
+NoConn ~ 11100 10900
+NoConn ~ 11100 11150
+NoConn ~ 10200 11150
+$Comp
+L melexisToFcamera4layer_parts:MIC23050 U?
+U 1 1 5CA9C277
+P 6950 1700
+F 0 "U?" H 7050 2165 50  0000 C CNN
+F 1 "MIC23050" H 7050 2074 50  0000 C CNN
+F 2 "" H 6950 1850 50  0001 C CNN
+F 3 "" H 6950 1850 50  0001 C CNN
+	1    6950 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Regulator_SwitchedCapacitor:LM27762 U?
+U 1 1 5CAA1993
+P 2250 1500
+F 0 "U?" H 2300 1967 50  0000 C CNN
+F 1 "LM27762" H 2300 1876 50  0000 C CNN
+F 2 "Package_SON:WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65_ThermalVias" H 2400 750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm27762.pdf" H 4750 1100 50  0001 C CNN
+	1    2250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAA6D65
+P 2800 2300
+F 0 "C?" H 2915 2346 50  0000 L CNN
+F 1 "C" H 2915 2255 50  0000 L CNN
+F 2 "" H 2838 2150 50  0001 C CNN
+F 3 "~" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAA7706
+P 1550 2100
+F 0 "C?" H 1665 2146 50  0000 L CNN
+F 1 "C" H 1665 2055 50  0000 L CNN
+F 2 "" H 1588 1950 50  0001 C CNN
+F 3 "~" H 1550 2100 50  0001 C CNN
+	1    1550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAA7EDC
+P 950 1500
+F 0 "C?" H 1065 1546 50  0000 L CNN
+F 1 "C" H 1065 1455 50  0000 L CNN
+F 2 "" H 988 1350 50  0001 C CNN
+F 3 "~" H 950 1500 50  0001 C CNN
+	1    950  1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAA9165
+P 1300 1500
+F 0 "R?" H 1370 1546 50  0000 L CNN
+F 1 "R" H 1370 1455 50  0000 L CNN
+F 2 "" V 1230 1500 50  0001 C CNN
+F 3 "~" H 1300 1500 50  0001 C CNN
+	1    1300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAAA7B7
+P 3250 1900
+F 0 "R?" H 3320 1946 50  0000 L CNN
+F 1 "R" H 3320 1855 50  0000 L CNN
+F 2 "" V 3180 1900 50  0001 C CNN
+F 3 "~" H 3250 1900 50  0001 C CNN
+	1    3250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAAAC88
+P 3250 1300
+F 0 "R?" H 3320 1346 50  0000 L CNN
+F 1 "R" H 3320 1255 50  0000 L CNN
+F 2 "" V 3180 1300 50  0001 C CNN
+F 3 "~" H 3250 1300 50  0001 C CNN
+	1    3250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1900 1550 1900
+Wire Wire Line
+	1550 1900 1550 1950
+Wire Wire Line
+	1550 2250 1550 2300
+Wire Wire Line
+	1550 2300 1800 2300
+Wire Wire Line
+	1800 2300 1800 2100
+Wire Wire Line
+	1800 2100 1850 2100
+Wire Wire Line
+	1850 1600 1750 1600
+Wire Wire Line
+	1750 1600 1750 1300
+Wire Wire Line
+	1750 1300 1850 1300
+Wire Wire Line
+	1850 1700 1750 1700
+Wire Wire Line
+	1750 1700 1750 1600
+Connection ~ 1750 1600
+Wire Wire Line
+	1850 1500 1550 1500
+Wire Wire Line
+	1550 1500 1550 1700
+Wire Wire Line
+	1550 1700 1300 1700
+Wire Wire Line
+	1300 1700 1300 1650
+Wire Wire Line
+	1300 1350 1300 1300
+Wire Wire Line
+	1300 1300 1750 1300
+Connection ~ 1750 1300
+Wire Wire Line
+	950  1350 950  1300
+Wire Wire Line
+	950  1300 1300 1300
+Connection ~ 1300 1300
+Wire Wire Line
+	2750 2100 2800 2100
+Wire Wire Line
+	2800 2100 2800 2150
+Wire Wire Line
+	2750 1700 3250 1700
+Wire Wire Line
+	3250 1700 3250 1750
+Wire Wire Line
+	2750 1500 3250 1500
+Wire Wire Line
+	3250 1500 3250 1450
+Wire Wire Line
+	2750 1300 2900 1300
+Wire Wire Line
+	2900 1300 2900 1100
+Wire Wire Line
+	2900 1100 3250 1100
+Wire Wire Line
+	3250 1100 3250 1150
+Wire Wire Line
+	2750 1900 2950 1900
+Wire Wire Line
+	2950 1900 2950 2100
+Wire Wire Line
+	3250 2100 3250 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAE7A9
+P 950 1800
+F 0 "#PWR?" H 950 1550 50  0001 C CNN
+F 1 "GND" H 955 1627 50  0000 C CNN
+F 2 "" H 950 1800 50  0001 C CNN
+F 3 "" H 950 1800 50  0001 C CNN
+	1    950  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAF334
+P 2800 2600
+F 0 "#PWR?" H 2800 2350 50  0001 C CNN
+F 1 "GND" H 2805 2427 50  0000 C CNN
+F 2 "" H 2800 2600 50  0001 C CNN
+F 3 "" H 2800 2600 50  0001 C CNN
+	1    2800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAAFA18
+P 4400 1600
+F 0 "#PWR?" H 4400 1350 50  0001 C CNN
+F 1 "GND" H 4405 1427 50  0000 C CNN
+F 2 "" H 4400 1600 50  0001 C CNN
+F 3 "" H 4400 1600 50  0001 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2600 2800 2500
+Wire Wire Line
+	2350 2300 2350 2500
+Wire Wire Line
+	2350 2500 2800 2500
+Connection ~ 2800 2500
+Wire Wire Line
+	2800 2500 2800 2450
+Wire Wire Line
+	2250 2300 2250 2500
+Wire Wire Line
+	2250 2500 2350 2500
+Connection ~ 2350 2500
+Wire Wire Line
+	950  1800 950  1650
+$Comp
+L Device:R R?
+U 1 1 5CAB1C4D
+P 3850 1500
+F 0 "R?" V 3643 1500 50  0000 C CNN
+F 1 "R" V 3734 1500 50  0000 C CNN
+F 2 "" V 3780 1500 50  0001 C CNN
+F 3 "~" H 3850 1500 50  0001 C CNN
+	1    3850 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CAB2B50
+P 3500 1700
+F 0 "R?" V 3293 1700 50  0000 C CNN
+F 1 "R" V 3384 1700 50  0000 C CNN
+F 2 "" V 3430 1700 50  0001 C CNN
+F 3 "~" H 3500 1700 50  0001 C CNN
+	1    3500 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 1700 4100 1700
+Wire Wire Line
+	4100 1700 4100 1500
+Wire Wire Line
+	4100 1500 4000 1500
+Wire Wire Line
+	3700 1500 3250 1500
+Connection ~ 3250 1500
+Wire Wire Line
+	3350 1700 3250 1700
+Connection ~ 3250 1700
+$Comp
+L Device:C C?
+U 1 1 5CAB5B6F
+P 4100 1300
+F 0 "C?" H 4215 1346 50  0000 L CNN
+F 1 "C" H 4215 1255 50  0000 L CNN
+F 2 "" H 4138 1150 50  0001 C CNN
+F 3 "~" H 4100 1300 50  0001 C CNN
+	1    4100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAB63E6
+P 4100 1900
+F 0 "C?" H 4215 1946 50  0000 L CNN
+F 1 "C" H 4215 1855 50  0000 L CNN
+F 2 "" H 4138 1750 50  0001 C CNN
+F 3 "~" H 4100 1900 50  0001 C CNN
+	1    4100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1450 4100 1500
+Connection ~ 4100 1500
+Wire Wire Line
+	4100 1750 4100 1700
+Connection ~ 4100 1700
+Wire Wire Line
+	4100 1150 4100 1100
+Wire Wire Line
+	4100 1100 3250 1100
+Connection ~ 3250 1100
+Wire Wire Line
+	4100 2050 4100 2100
+Wire Wire Line
+	2950 2100 3250 2100
+Connection ~ 3250 2100
+Wire Wire Line
+	3250 2100 4100 2100
+Wire Wire Line
+	4400 1600 4400 1500
+Wire Wire Line
+	4400 1500 4100 1500
+Text Label 4400 1100 0    50   ~ 0
+3V3_clean
+Text Label 4400 2100 0    50   ~ 0
+ARRAYBIAS
+Wire Wire Line
+	4100 1100 4400 1100
+Connection ~ 4100 1100
+Wire Wire Line
+	4100 2100 4400 2100
+Connection ~ 4100 2100
+$Comp
+L power:+5V #PWR?
+U 1 1 5CABC517
+P 950 1150
+F 0 "#PWR?" H 950 1000 50  0001 C CNN
+F 1 "+5V" H 965 1323 50  0000 C CNN
+F 2 "" H 950 1150 50  0001 C CNN
+F 3 "" H 950 1150 50  0001 C CNN
+	1    950  1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1150 950  1300
+Connection ~ 950  1300
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CABDD5C
+P 4500 900
+F 0 "J?" H 4580 942 50  0000 L CNN
+F 1 "Conn_01x01" H 4580 851 50  0000 L CNN
+F 2 "" H 4500 900 50  0001 C CNN
+F 3 "~" H 4500 900 50  0001 C CNN
+	1    4500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CABF2AF
+P 4500 2250
+F 0 "J?" H 4580 2292 50  0000 L CNN
+F 1 "Conn_01x01" H 4580 2201 50  0000 L CNN
+F 2 "" H 4500 2250 50  0001 C CNN
+F 3 "~" H 4500 2250 50  0001 C CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1100 4100 900 
+Wire Wire Line
+	4100 900  4300 900 
+Wire Wire Line
+	4100 2100 4100 2250
+Wire Wire Line
+	4100 2250 4300 2250
+$Comp
+L Device:L L?
+U 1 1 5CAC8D35
+P 7650 1500
+F 0 "L?" V 7840 1500 50  0000 C CNN
+F 1 "L" V 7749 1500 50  0000 C CNN
+F 2 "" H 7650 1500 50  0001 C CNN
+F 3 "~" H 7650 1500 50  0001 C CNN
+	1    7650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CACA12F
+P 8350 1700
+F 0 "C?" H 8465 1746 50  0000 L CNN
+F 1 "C" H 8465 1655 50  0000 L CNN
+F 2 "" H 8388 1550 50  0001 C CNN
+F 3 "~" H 8350 1700 50  0001 C CNN
+	1    8350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CACB072
+P 7600 2000
+F 0 "C?" H 7715 2046 50  0000 L CNN
+F 1 "C" H 7715 1955 50  0000 L CNN
+F 2 "" H 7638 1850 50  0001 C CNN
+F 3 "~" H 7600 2000 50  0001 C CNN
+	1    7600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CACBAF7
+P 5800 2000
+F 0 "C?" H 5915 2046 50  0000 L CNN
+F 1 "C" H 5915 1955 50  0000 L CNN
+F 2 "" H 5838 1850 50  0001 C CNN
+F 3 "~" H 5800 2000 50  0001 C CNN
+	1    5800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CACC740
+P 5800 1100
+F 0 "#PWR?" H 5800 950 50  0001 C CNN
+F 1 "+5V" H 5815 1273 50  0000 C CNN
+F 2 "" H 5800 1100 50  0001 C CNN
+F 3 "" H 5800 1100 50  0001 C CNN
+	1    5800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CACD654
+P 8350 2000
+F 0 "#PWR?" H 8350 1750 50  0001 C CNN
+F 1 "GND" H 8355 1827 50  0000 C CNN
+F 2 "" H 8350 2000 50  0001 C CNN
+F 3 "" H 8350 2000 50  0001 C CNN
+	1    8350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CACE2B5
+P 6200 2300
+F 0 "#PWR?" H 6200 2050 50  0001 C CNN
+F 1 "GND" H 6205 2127 50  0000 C CNN
+F 2 "" H 6200 2300 50  0001 C CNN
+F 3 "" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1500 7500 1500
+Wire Wire Line
+	7800 1500 8000 1500
+Wire Wire Line
+	8350 1500 8350 1550
+Wire Wire Line
+	8350 1850 8350 2000
+Wire Wire Line
+	7400 1900 7450 1900
+Wire Wire Line
+	7450 1900 7450 2200
+Wire Wire Line
+	7450 2200 7600 2200
+Wire Wire Line
+	7600 2200 7600 2150
+Wire Wire Line
+	7400 1800 7600 1800
+Wire Wire Line
+	7600 1800 7600 1850
+Wire Wire Line
+	7600 1800 8000 1800
+Wire Wire Line
+	8000 1800 8000 1500
+Connection ~ 7600 1800
+Connection ~ 8000 1500
+Wire Wire Line
+	8000 1500 8350 1500
+Wire Wire Line
+	6200 2300 6200 2200
+Wire Wire Line
+	6200 1600 6300 1600
+Wire Wire Line
+	6300 1700 6200 1700
+Connection ~ 6200 1700
+Wire Wire Line
+	6200 1700 6200 1600
+Wire Wire Line
+	6300 1900 6200 1900
+Connection ~ 6200 1900
+Wire Wire Line
+	6200 1900 6200 1700
+Wire Wire Line
+	5800 2150 5800 2200
+Wire Wire Line
+	5800 2200 6200 2200
+Connection ~ 6200 2200
+Wire Wire Line
+	6200 2200 6200 1900
+Wire Wire Line
+	6300 1800 5800 1800
+Wire Wire Line
+	5800 1800 5800 1850
+Connection ~ 5800 1800
+Wire Wire Line
+	7400 1600 7450 1600
+Wire Wire Line
+	7450 1600 7450 1150
+Wire Wire Line
+	5800 1100 5800 1150
+Wire Wire Line
+	5800 1150 7450 1150
+Connection ~ 5800 1150
+Wire Wire Line
+	5800 1150 5800 1800
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CAE4314
+P 8250 1100
+F 0 "J?" H 8330 1142 50  0000 L CNN
+F 1 "Conn_01x01" H 8330 1051 50  0000 L CNN
+F 2 "" H 8250 1100 50  0001 C CNN
+F 3 "~" H 8250 1100 50  0001 C CNN
+	1    8250 1100
+	1    0    0    -1  
+$EndComp
+Text Label 8050 1350 0    50   ~ 0
+VDD3V3
+Wire Wire Line
+	8000 1500 8000 1350
+Wire Wire Line
+	8000 1100 8050 1100
+Wire Wire Line
+	8000 1350 8050 1350
+Connection ~ 8000 1350
+Wire Wire Line
+	8000 1350 8000 1100
+$Comp
+L melexisToFcamera4layer_parts:MIC23050 U?
+U 1 1 5CAF4D01
+P 10450 1700
+F 0 "U?" H 10550 2165 50  0000 C CNN
+F 1 "MIC23050" H 10550 2074 50  0000 C CNN
+F 2 "" H 10450 1850 50  0001 C CNN
+F 3 "" H 10450 1850 50  0001 C CNN
+	1    10450 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5CAF4D07
+P 11150 1500
+F 0 "L?" V 11340 1500 50  0000 C CNN
+F 1 "L" V 11249 1500 50  0000 C CNN
+F 2 "" H 11150 1500 50  0001 C CNN
+F 3 "~" H 11150 1500 50  0001 C CNN
+	1    11150 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAF4D0D
+P 11850 1700
+F 0 "C?" H 11965 1746 50  0000 L CNN
+F 1 "C" H 11965 1655 50  0000 L CNN
+F 2 "" H 11888 1550 50  0001 C CNN
+F 3 "~" H 11850 1700 50  0001 C CNN
+	1    11850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAF4D13
+P 11100 2000
+F 0 "C?" H 11215 2046 50  0000 L CNN
+F 1 "C" H 11215 1955 50  0000 L CNN
+F 2 "" H 11138 1850 50  0001 C CNN
+F 3 "~" H 11100 2000 50  0001 C CNN
+	1    11100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CAF4D19
+P 9300 2000
+F 0 "C?" H 9415 2046 50  0000 L CNN
+F 1 "C" H 9415 1955 50  0000 L CNN
+F 2 "" H 9338 1850 50  0001 C CNN
+F 3 "~" H 9300 2000 50  0001 C CNN
+	1    9300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CAF4D1F
+P 9300 1100
+F 0 "#PWR?" H 9300 950 50  0001 C CNN
+F 1 "+5V" H 9315 1273 50  0000 C CNN
+F 2 "" H 9300 1100 50  0001 C CNN
+F 3 "" H 9300 1100 50  0001 C CNN
+	1    9300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAF4D25
+P 11850 2000
+F 0 "#PWR?" H 11850 1750 50  0001 C CNN
+F 1 "GND" H 11855 1827 50  0000 C CNN
+F 2 "" H 11850 2000 50  0001 C CNN
+F 3 "" H 11850 2000 50  0001 C CNN
+	1    11850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAF4D2B
+P 9700 2300
+F 0 "#PWR?" H 9700 2050 50  0001 C CNN
+F 1 "GND" H 9705 2127 50  0000 C CNN
+F 2 "" H 9700 2300 50  0001 C CNN
+F 3 "" H 9700 2300 50  0001 C CNN
+	1    9700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 1500 11000 1500
+Wire Wire Line
+	11300 1500 11500 1500
+Wire Wire Line
+	11850 1500 11850 1550
+Wire Wire Line
+	11850 1850 11850 2000
+Wire Wire Line
+	10900 1900 10950 1900
+Wire Wire Line
+	10950 1900 10950 2200
+Wire Wire Line
+	10950 2200 11100 2200
+Wire Wire Line
+	11100 2200 11100 2150
+Wire Wire Line
+	10900 1800 11100 1800
+Wire Wire Line
+	11100 1800 11100 1850
+Wire Wire Line
+	11100 1800 11500 1800
+Wire Wire Line
+	11500 1800 11500 1500
+Connection ~ 11100 1800
+Connection ~ 11500 1500
+Wire Wire Line
+	11500 1500 11850 1500
+Wire Wire Line
+	9700 2300 9700 2200
+Wire Wire Line
+	9700 1600 9800 1600
+Wire Wire Line
+	9800 1700 9700 1700
+Connection ~ 9700 1700
+Wire Wire Line
+	9700 1700 9700 1600
+Wire Wire Line
+	9800 1900 9700 1900
+Connection ~ 9700 1900
+Wire Wire Line
+	9700 1900 9700 1700
+Wire Wire Line
+	9300 2150 9300 2200
+Wire Wire Line
+	9300 2200 9700 2200
+Connection ~ 9700 2200
+Wire Wire Line
+	9700 2200 9700 1900
+Wire Wire Line
+	9800 1800 9300 1800
+Wire Wire Line
+	9300 1800 9300 1850
+Connection ~ 9300 1800
+Wire Wire Line
+	10900 1600 10950 1600
+Wire Wire Line
+	10950 1600 10950 1150
+Wire Wire Line
+	9300 1100 9300 1150
+Wire Wire Line
+	9300 1150 10950 1150
+Connection ~ 9300 1150
+Wire Wire Line
+	9300 1150 9300 1800
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CAF4D55
+P 11750 1100
+F 0 "J?" H 11830 1142 50  0000 L CNN
+F 1 "Conn_01x01" H 11830 1051 50  0000 L CNN
+F 2 "" H 11750 1100 50  0001 C CNN
+F 3 "~" H 11750 1100 50  0001 C CNN
+	1    11750 1100
+	1    0    0    -1  
+$EndComp
+Text Label 11550 1350 0    50   ~ 0
+VDD3V3
+Wire Wire Line
+	11500 1500 11500 1350
+Wire Wire Line
+	11500 1100 11550 1100
+Wire Wire Line
+	11500 1350 11550 1350
+Connection ~ 11500 1350
+Wire Wire Line
+	11500 1350 11500 1100
+$Comp
+L melexisToFcamera4layer_parts:MIC23050 U?
+U 1 1 5CB0097F
+P 14000 1700
+F 0 "U?" H 14100 2165 50  0000 C CNN
+F 1 "MIC23050" H 14100 2074 50  0000 C CNN
+F 2 "" H 14000 1850 50  0001 C CNN
+F 3 "" H 14000 1850 50  0001 C CNN
+	1    14000 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5CB00985
+P 14700 1500
+F 0 "L?" V 14890 1500 50  0000 C CNN
+F 1 "L" V 14799 1500 50  0000 C CNN
+F 2 "" H 14700 1500 50  0001 C CNN
+F 3 "~" H 14700 1500 50  0001 C CNN
+	1    14700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB0098B
+P 15400 1700
+F 0 "C?" H 15515 1746 50  0000 L CNN
+F 1 "C" H 15515 1655 50  0000 L CNN
+F 2 "" H 15438 1550 50  0001 C CNN
+F 3 "~" H 15400 1700 50  0001 C CNN
+	1    15400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB00991
+P 14650 2000
+F 0 "C?" H 14765 2046 50  0000 L CNN
+F 1 "C" H 14765 1955 50  0000 L CNN
+F 2 "" H 14688 1850 50  0001 C CNN
+F 3 "~" H 14650 2000 50  0001 C CNN
+	1    14650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB00997
+P 12850 2000
+F 0 "C?" H 12965 2046 50  0000 L CNN
+F 1 "C" H 12965 1955 50  0000 L CNN
+F 2 "" H 12888 1850 50  0001 C CNN
+F 3 "~" H 12850 2000 50  0001 C CNN
+	1    12850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB0099D
+P 12850 1100
+F 0 "#PWR?" H 12850 950 50  0001 C CNN
+F 1 "+5V" H 12865 1273 50  0000 C CNN
+F 2 "" H 12850 1100 50  0001 C CNN
+F 3 "" H 12850 1100 50  0001 C CNN
+	1    12850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB009A3
+P 15400 2000
+F 0 "#PWR?" H 15400 1750 50  0001 C CNN
+F 1 "GND" H 15405 1827 50  0000 C CNN
+F 2 "" H 15400 2000 50  0001 C CNN
+F 3 "" H 15400 2000 50  0001 C CNN
+	1    15400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB009A9
+P 13250 2300
+F 0 "#PWR?" H 13250 2050 50  0001 C CNN
+F 1 "GND" H 13255 2127 50  0000 C CNN
+F 2 "" H 13250 2300 50  0001 C CNN
+F 3 "" H 13250 2300 50  0001 C CNN
+	1    13250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 1500 14550 1500
+Wire Wire Line
+	14850 1500 15050 1500
+Wire Wire Line
+	15400 1500 15400 1550
+Wire Wire Line
+	15400 1850 15400 2000
+Wire Wire Line
+	14450 1900 14500 1900
+Wire Wire Line
+	14500 1900 14500 2200
+Wire Wire Line
+	14500 2200 14650 2200
+Wire Wire Line
+	14650 2200 14650 2150
+Wire Wire Line
+	14450 1800 14650 1800
+Wire Wire Line
+	14650 1800 14650 1850
+Wire Wire Line
+	14650 1800 15050 1800
+Wire Wire Line
+	15050 1800 15050 1500
+Connection ~ 14650 1800
+Connection ~ 15050 1500
+Wire Wire Line
+	15050 1500 15400 1500
+Wire Wire Line
+	13250 2300 13250 2200
+Wire Wire Line
+	13250 1600 13350 1600
+Wire Wire Line
+	13350 1700 13250 1700
+Connection ~ 13250 1700
+Wire Wire Line
+	13250 1700 13250 1600
+Wire Wire Line
+	13350 1900 13250 1900
+Connection ~ 13250 1900
+Wire Wire Line
+	13250 1900 13250 1700
+Wire Wire Line
+	12850 2150 12850 2200
+Wire Wire Line
+	12850 2200 13250 2200
+Connection ~ 13250 2200
+Wire Wire Line
+	13250 2200 13250 1900
+Wire Wire Line
+	13350 1800 12850 1800
+Wire Wire Line
+	12850 1800 12850 1850
+Connection ~ 12850 1800
+Wire Wire Line
+	14450 1600 14500 1600
+Wire Wire Line
+	14500 1600 14500 1150
+Wire Wire Line
+	12850 1100 12850 1150
+Wire Wire Line
+	12850 1150 14500 1150
+Connection ~ 12850 1150
+Wire Wire Line
+	12850 1150 12850 1800
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5CB009D3
+P 15300 1100
+F 0 "J?" H 15380 1142 50  0000 L CNN
+F 1 "Conn_01x01" H 15380 1051 50  0000 L CNN
+F 2 "" H 15300 1100 50  0001 C CNN
+F 3 "~" H 15300 1100 50  0001 C CNN
+	1    15300 1100
+	1    0    0    -1  
+$EndComp
+Text Label 15100 1350 0    50   ~ 0
+VDD3V3
+Wire Wire Line
+	15050 1500 15050 1350
+Wire Wire Line
+	15050 1100 15100 1100
+Wire Wire Line
+	15050 1350 15100 1350
+Connection ~ 15050 1350
+Wire Wire Line
+	15050 1350 15050 1100
+Text Notes 6700 950  0    50   ~ 0
+3V3 regular
+Text Notes 10100 950  0    50   ~ 0
+1V8 regular
+Text Notes 13750 950  0    50   ~ 0
+1V8 clean
+Text Notes 1850 800  0    50   ~ 0
+Generate negative and 3V3 clean voltages
 $EndSCHEMATC
