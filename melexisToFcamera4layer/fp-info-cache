@@ -1,4 +1,4 @@
-130234623668752
+121277470789552
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -12263,6 +12263,34 @@ Neosid_TripleHelicalFilter_Type10E
 0
 0
 0
+footprintsForCamera
+Cmod_A7
+Through hole straight pin header, 2x24, 2.54mm pitch, double rows
+Through hole pin header THT 2x24 2.54mm double row
+0
+48
+48
+footprintsForCamera
+MIC23050
+
+
+0
+9
+9
+footprintsForCamera
+MLX75023
+Support PGA 128 pins
+PGA
+0
+44
+44
+footprintsForCamera
+MLX75123
+Support PGA 128 pins
+PGA
+0
+262
+94
 Fuse_Holders_and_Fuses
 BladeFuse-CarType
 
@@ -18199,76 +18227,6 @@ Socket_DIN41612-CaseC3-Male_30Pin-3rows
 0
 0
 0
-melexisParts
-3M_5622-4100-ML_SATA
-
-
-0
-22
-22
-melexisParts
-Cmod_A7
-Through hole straight pin header, 2x24, 2.54mm pitch, double rows
-Through hole pin header THT 2x24 2.54mm double row
-0
-48
-48
-melexisParts
-FCI_10029449-11[13]RLF
-
-
-0
-23
-20
-melexisParts
-FCI_10029449-11[13]RLF_HDMI
-
-
-0
-23
-20
-melexisParts
-MC68030
-Support PGA 128 pins
-PGA
-0
-128
-128
-melexisParts
-MIC23050
-
-
-0
-9
-9
-melexisParts
-MLX75023
-Support PGA 128 pins
-PGA
-0
-44
-44
-melexisParts
-MLX75123
-Support PGA 128 pins
-PGA
-0
-94
-94
-melexisParts
-MLX75123_round
-Support PGA 128 pins
-PGA
-0
-262
-94
-melexisParts
-TMP108
-
-
-0
-6
-6
 Microwave
 ALIM
 
