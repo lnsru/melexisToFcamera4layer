@@ -1,4 +1,4 @@
-121277470789552
+124392724157397
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -12264,12 +12264,26 @@ Neosid_TripleHelicalFilter_Type10E
 0
 0
 footprintsForCamera
+ADP2164
+LFCSP, 16 pin, 4x4mm, 2.1mm sq pad (http://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.pdf)
+LFCSP 16 0.65
+0
+21
+17
+footprintsForCamera
 Cmod_A7
 Through hole straight pin header, 2x24, 2.54mm pitch, double rows
-Through hole pin header THT 2x24 2.54mm double row
+FPGA module
 0
 48
 48
+footprintsForCamera
+LM27762
+WSON-12 http://www.ti.com/lit/ds/symlink/lm27762.pdf
+WSON-12
+0
+19
+13
 footprintsForCamera
 MIC23050
 
@@ -12279,14 +12293,14 @@ MIC23050
 9
 footprintsForCamera
 MLX75023
-Support PGA 128 pins
+ToF sensor
 PGA
 0
 44
 44
 footprintsForCamera
 MLX75123
-Support PGA 128 pins
+ToF chipset
 PGA
 0
 262

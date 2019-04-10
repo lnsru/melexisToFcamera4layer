@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprintsForCamera)(type KiCad)(uri C:/myGithub/melexisToFcamera4layer/footprintsForCamera.pretty)(options "")(descr ""))
+)

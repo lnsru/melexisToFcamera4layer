@@ -22,7 +22,7 @@ U 1 1 5CAA1993
 P 2250 1500
 F 0 "U1" H 2300 1967 50  0000 C CNN
 F 1 "LM27762" H 2300 1876 50  0000 C CNN
-F 2 "Package_SON:WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65_ThermalVias" H 2400 750 50  0001 L CNN
+F 2 "footprintsForCamera:LM27762" H 2400 750 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm27762.pdf" H 4750 1100 50  0001 C CNN
 	1    2250 1500
 	1    0    0    -1  
@@ -880,7 +880,7 @@ U 1 1 5CAD5CAB
 P 3350 3850
 F 0 "U2" H 3350 4465 50  0000 C CNN
 F 1 "ADP2164" H 3350 4374 50  0000 C CNN
-F 2 "" H 3350 3850 50  0001 C CNN
+F 2 "footprintsForCamera:ADP2164" H 3350 3850 50  0001 C CNN
 F 3 "" H 3350 3850 50  0001 C CNN
 	1    3350 3850
 	1    0    0    -1  
@@ -3011,7 +3011,7 @@ U 1 1 5D6BF0BA
 P 6600 6100
 F 0 "J4" V 6472 6180 50  0000 L CNN
 F 1 "Conn_01x02" V 6563 6180 50  0000 L CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x02_Pitch2.54mm" H 6600 6100 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6600 6100 50  0001 C CNN
 F 3 "~" H 6600 6100 50  0001 C CNN
 	1    6600 6100
 	0    1    1    0   
@@ -3022,7 +3022,7 @@ U 1 1 5D6C0611
 P 10000 6200
 F 0 "J6" H 10080 6192 50  0000 L CNN
 F 1 "Conn_01x02" H 10080 6101 50  0000 L CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x02_Pitch2.54mm" H 10000 6200 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 10000 6200 50  0001 C CNN
 F 3 "~" H 10000 6200 50  0001 C CNN
 	1    10000 6200
 	1    0    0    -1  
@@ -3174,4 +3174,109 @@ NoConn ~ 8400 5500
 NoConn ~ 8400 5600
 NoConn ~ 8400 5700
 NoConn ~ 8400 5800
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 5CB4F921
+P 8200 8450
+F 0 "J11" H 8280 8442 50  0000 L CNN
+F 1 "Conn_01x04" H 8280 8351 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8200 8450 50  0001 C CNN
+F 3 "~" H 8200 8450 50  0001 C CNN
+	1    8200 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 5CB500EB
+P 7450 9300
+F 0 "J9" H 7530 9292 50  0000 L CNN
+F 1 "Conn_01x04" H 7530 9201 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7450 9300 50  0001 C CNN
+F 3 "~" H 7450 9300 50  0001 C CNN
+	1    7450 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J10
+U 1 1 5CB5087B
+P 8100 9300
+F 0 "J10" H 8180 9292 50  0000 L CNN
+F 1 "Conn_01x04" H 8180 9201 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8100 9300 50  0001 C CNN
+F 3 "~" H 8100 9300 50  0001 C CNN
+	1    8100 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5CB511C8
+P 7800 9600
+F 0 "#PWR034" H 7800 9350 50  0001 C CNN
+F 1 "GND" H 7800 9450 50  0000 C CNN
+F 2 "" H 7800 9600 50  0001 C CNN
+F 3 "" H 7800 9600 50  0001 C CNN
+	1    7800 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5CB51EA2
+P 7150 9600
+F 0 "#PWR033" H 7150 9350 50  0001 C CNN
+F 1 "GND" H 7150 9450 50  0000 C CNN
+F 2 "" H 7150 9600 50  0001 C CNN
+F 3 "" H 7150 9600 50  0001 C CNN
+	1    7150 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9200 7250 9300
+Wire Wire Line
+	7250 9600 7150 9600
+Connection ~ 7250 9300
+Wire Wire Line
+	7250 9300 7250 9400
+Connection ~ 7250 9400
+Wire Wire Line
+	7250 9400 7250 9500
+Connection ~ 7250 9500
+Wire Wire Line
+	7250 9500 7250 9600
+Wire Wire Line
+	7900 9200 7900 9300
+Wire Wire Line
+	7900 9600 7800 9600
+Connection ~ 7900 9300
+Wire Wire Line
+	7900 9300 7900 9400
+Connection ~ 7900 9400
+Wire Wire Line
+	7900 9400 7900 9500
+Connection ~ 7900 9500
+Wire Wire Line
+	7900 9500 7900 9600
+$Comp
+L power:+5V #PWR035
+U 1 1 5CC2799B
+P 7900 8250
+F 0 "#PWR035" H 7900 8100 50  0001 C CNN
+F 1 "+5V" H 7915 8423 50  0000 C CNN
+F 2 "" H 7900 8250 50  0001 C CNN
+F 3 "" H 7900 8250 50  0001 C CNN
+	1    7900 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 8650 8000 8550
+Wire Wire Line
+	8000 8250 7900 8250
+Connection ~ 8000 8350
+Wire Wire Line
+	8000 8350 8000 8250
+Connection ~ 8000 8450
+Wire Wire Line
+	8000 8450 8000 8350
+Connection ~ 8000 8550
+Wire Wire Line
+	8000 8550 8000 8450
 $EndSCHEMATC
