@@ -1,4 +1,4 @@
-update=4/10/2019 6:06:41 PM
+update=4/10/2019 6:58:29 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -13,7 +13,7 @@ LibDir=
 version=1
 PageLayoutDescrFile=
 LastNetListRead=melexisToFcamera4layer.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -65,4 +65,16 @@ OthersTextUpright=1
 SolderMaskClearance=0.07619999999999999
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
+[pcbnew/Layer.F.Cu]
+Name=F.Cu
+Type=1
+[pcbnew/Layer.In1.Cu]
+Name=In1.Cu
+Type=2
+[pcbnew/Layer.In2.Cu]
+Name=In2.Cu
+Type=2
+[pcbnew/Layer.B.Cu]
+Name=B.Cu
+Type=2
