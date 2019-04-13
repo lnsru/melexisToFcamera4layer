@@ -659,7 +659,7 @@ F 3 "~" H 11750 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 11550 1350 0    50   ~ 0
-VDD3V3
+VDD1V8
 Wire Wire Line
 	11500 1500 11500 1350
 Wire Wire Line
@@ -823,7 +823,7 @@ F 3 "~" H 15300 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 15100 1350 0    50   ~ 0
-VDD3V3
+VDD1V8_clean
 Wire Wire Line
 	15050 1500 15050 1350
 Wire Wire Line
@@ -1163,10 +1163,10 @@ F 3 "~" H 1950 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C6
+L Device:CP CP6
 U 1 1 5CC4B151
 P 1500 3500
-F 0 "C6" H 1618 3546 50  0000 L CNN
+F 0 "CP6" H 1618 3546 50  0000 L CNN
 F 1 "150u" H 1618 3455 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1538 3350 50  0001 C CNN
 F 3 "~" H 1500 3500 50  0001 C CNN
@@ -1410,49 +1410,49 @@ Text Label 4250 9150 0    60   ~ 0
 COL6
 Text Label 4250 9250 0    60   ~ 0
 COL7
-Text Label 6700 5600 2    60   ~ 0
+Text Label 5800 5650 2    60   ~ 0
 SCL
-Text Label 6700 5700 2    60   ~ 0
+Text Label 5800 5750 2    60   ~ 0
 SDA
-Text Label 6700 5400 2    60   ~ 0
+Text Label 5800 5450 2    60   ~ 0
 RESET
-Text Label 6700 5300 2    60   ~ 0
+Text Label 5800 5350 2    60   ~ 0
 QUIET
-Text Label 6600 5200 2    60   ~ 0
+Text Label 5700 5250 2    60   ~ 0
 CLK_IN
-Text Label 6700 3900 2    60   ~ 0
+Text Label 5800 3950 2    60   ~ 0
 PIXCLK
-Text Label 6800 3700 2    60   ~ 0
+Text Label 5800 3750 2    60   ~ 0
 HSYNC
-Text Label 6800 3600 2    60   ~ 0
+Text Label 5800 3650 2    60   ~ 0
 VSYNC
-Text Label 6700 3800 2    60   ~ 0
+Text Label 5800 3850 2    60   ~ 0
 FSYNC
-Text Label 6700 5500 2    60   ~ 0
+Text Label 5800 5550 2    60   ~ 0
 TRIGGER
-Text Label 6700 4000 2    60   ~ 0
+Text Label 5800 4050 2    60   ~ 0
 DATA0
-Text Label 6700 4100 2    60   ~ 0
+Text Label 5800 4150 2    60   ~ 0
 DATA1
-Text Label 6700 4200 2    60   ~ 0
+Text Label 5800 4250 2    60   ~ 0
 DATA2
-Text Label 6700 4300 2    60   ~ 0
+Text Label 5800 4350 2    60   ~ 0
 DATA3
-Text Label 6700 4400 2    60   ~ 0
+Text Label 5800 4450 2    60   ~ 0
 DATA4
-Text Label 6700 4500 2    60   ~ 0
+Text Label 5800 4550 2    60   ~ 0
 DATA5
-Text Label 6700 4600 2    60   ~ 0
+Text Label 5800 4650 2    60   ~ 0
 DATA6
-Text Label 6700 4700 2    60   ~ 0
+Text Label 5800 4750 2    60   ~ 0
 DATA7
-Text Label 6700 4800 2    60   ~ 0
+Text Label 5800 4850 2    60   ~ 0
 DATA8
-Text Label 6700 4900 2    60   ~ 0
+Text Label 5800 4950 2    60   ~ 0
 DATA9
-Text Label 6700 5000 2    60   ~ 0
+Text Label 5800 5050 2    60   ~ 0
 DATA10
-Text Label 6700 5100 2    60   ~ 0
+Text Label 5800 5150 2    60   ~ 0
 DATA11
 Text Notes 3950 150  0    60   ~ 0
 In this scenario we suggest to connect certain domains to each other with good decoupling techniques.\n1V8 : VDDD_1V8, VDD_IO, VDD_I2C\n1V8_Clean : VDDA_1V8, VDDA_ADC_1V8, VDDA_ADC_S_1V8\n3V3 : VDDA_3V3, VDDD_3V3\n\nIn combination with MLX75023 or MLX75024 an extra MIXH regulator, 3V3_clean and negative ARRAYBIAS supply is\nrequired.
@@ -1562,10 +1562,10 @@ DVDD3V3
 Text Label 1850 10500 0    60   ~ 0
 MIXH_VOLTAGE
 $Comp
-L Device:CP C1
+L Device:CP CP1
 U 1 1 5A47508D
 P 750 10750
-F 0 "C1" H 775 10850 50  0000 L CNN
+F 0 "CP1" H 775 10850 50  0000 L CNN
 F 1 "4u7" H 775 10650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 788 10600 50  0001 C CNN
 F 3 "" H 750 10750 50  0001 C CNN
@@ -1573,10 +1573,10 @@ F 3 "" H 750 10750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C5
+L Device:CP CP5
 U 1 1 5A475102
 P 1300 10750
-F 0 "C5" H 1325 10850 50  0000 L CNN
+F 0 "CP5" H 1325 10850 50  0000 L CNN
 F 1 "4u7" H 1325 10650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1338 10600 50  0001 C CNN
 F 3 "" H 1300 10750 50  0001 C CNN
@@ -1873,21 +1873,10 @@ DVDD3V3
 Text Label 3700 10500 0    60   ~ 0
 VDD1V8
 $Comp
-L Device:C C16
-U 1 1 5A4C7D57
-P 2600 10750
-F 0 "C16" H 2625 10850 50  0000 L CNN
-F 1 "4u7" H 2625 10650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2638 10600 50  0001 C CNN
-F 3 "" H 2600 10750 50  0001 C CNN
-	1    2600 10750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C19
+L Device:CP CP19
 U 1 1 5A4C7D5D
 P 3150 10750
-F 0 "C19" H 3175 10850 50  0000 L CNN
+F 0 "CP19" H 3175 10850 50  0000 L CNN
 F 1 "4u7" H 3175 10650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3188 10600 50  0001 C CNN
 F 3 "" H 3150 10750 50  0001 C CNN
@@ -1895,10 +1884,10 @@ F 3 "" H 3150 10750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C21
+L Device:CP CP21
 U 1 1 5A4C7D63
 P 3700 10750
-F 0 "C21" H 3725 10850 50  0000 L CNN
+F 0 "CP21" H 3725 10850 50  0000 L CNN
 F 1 "4u7" H 3725 10650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 3738 10600 50  0001 C CNN
 F 3 "" H 3700 10750 50  0001 C CNN
@@ -1950,10 +1939,10 @@ F 3 "" H 3900 11000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C25
+L Device:CP CP25
 U 1 1 5A4CAF67
 P 4300 10750
-F 0 "C25" H 4325 10850 50  0000 L CNN
+F 0 "CP25" H 4325 10850 50  0000 L CNN
 F 1 "4u7" H 4325 10650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 4338 10600 50  0001 C CNN
 F 3 "" H 4300 10750 50  0001 C CNN
@@ -1983,10 +1972,10 @@ F 3 "" H 1050 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C10
+L Device:CP CP10
 U 1 1 5A475173
 P 1850 10750
-F 0 "C10" H 1875 10850 50  0000 L CNN
+F 0 "CP10" H 1875 10850 50  0000 L CNN
 F 1 "4u7" H 1875 10650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1888 10600 50  0001 C CNN
 F 3 "" H 1850 10750 50  0001 C CNN
@@ -2561,41 +2550,41 @@ Wire Wire Line
 	4500 10550 4300 10550
 Connection ~ 4300 10550
 Wire Wire Line
-	6800 3800 6700 3800
+	5900 3850 5850 3850
 Wire Wire Line
-	6700 3900 6800 3900
+	5800 3950 5850 3950
 Wire Wire Line
-	6800 4000 6700 4000
+	5900 4050 5850 4050
 Wire Wire Line
-	6700 4100 6800 4100
+	5800 4150 5850 4150
 Wire Wire Line
-	6800 4200 6700 4200
+	5900 4250 5850 4250
 Wire Wire Line
-	6700 4300 6800 4300
+	5800 4350 5850 4350
 Wire Wire Line
-	6800 4400 6700 4400
+	5900 4450 5850 4450
 Wire Wire Line
-	6700 4500 6800 4500
+	5800 4550 5850 4550
 Wire Wire Line
-	6800 4600 6700 4600
+	5900 4650 5850 4650
 Wire Wire Line
-	6800 4700 6700 4700
+	5900 4750 5850 4750
 Wire Wire Line
-	6700 4800 6800 4800
+	5800 4850 5850 4850
 Wire Wire Line
-	6800 4900 6700 4900
+	5900 4950 5850 4950
 Wire Wire Line
-	6700 5000 6800 5000
+	5800 5050 5850 5050
 Wire Wire Line
-	6800 5100 6700 5100
+	5900 5150 5850 5150
 Wire Wire Line
-	6700 5400 6800 5400
+	5800 5450 5850 5450
 Wire Wire Line
-	6800 5500 6700 5500
+	5900 5550 5850 5550
 Wire Wire Line
-	6800 5600 6700 5600
+	5900 5650 5850 5650
 Wire Wire Line
-	6700 5700 6800 5700
+	5800 5750 5850 5750
 Wire Wire Line
 	6650 5800 6800 5800
 Wire Wire Line
@@ -2716,9 +2705,9 @@ Wire Wire Line
 	4700 7700 4700 7750
 Connection ~ 4700 7750
 Wire Wire Line
-	6600 5200 6800 5200
+	5700 5250 5850 5250
 Wire Wire Line
-	6800 5300 6700 5300
+	5900 5350 5850 5350
 Wire Wire Line
 	9550 6150 9550 6200
 Connection ~ 9550 6200
@@ -3001,19 +2990,15 @@ F 3 "" H 8200 10350 60  0001 C CNN
 	1    8200 10350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 5900 6500 5900
-Wire Wire Line
-	6600 5900 6800 5900
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5D6BF0BA
-P 6600 6100
-F 0 "J4" V 6472 6180 50  0000 L CNN
-F 1 "Conn_01x02" V 6563 6180 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6600 6100 50  0001 C CNN
-F 3 "~" H 6600 6100 50  0001 C CNN
-	1    6600 6100
+P 5300 6250
+F 0 "J4" V 5172 6330 50  0000 L CNN
+F 1 "Conn_01x02" V 5263 6330 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5300 6250 50  0001 C CNN
+F 3 "~" H 5300 6250 50  0001 C CNN
+	1    5300 6250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -3073,16 +3058,14 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR014
 U 1 1 5D9F49F6
-P 5950 5650
-F 0 "#PWR014" H 5950 5500 50  0001 C CNN
-F 1 "+5V" H 5965 5823 50  0000 C CNN
-F 2 "" H 5950 5650 50  0001 C CNN
-F 3 "" H 5950 5650 50  0001 C CNN
-	1    5950 5650
+P 5200 6000
+F 0 "#PWR014" H 5200 5850 50  0001 C CNN
+F 1 "+5V" H 5215 6173 50  0000 C CNN
+F 2 "" H 5200 6000 50  0001 C CNN
+F 3 "" H 5200 6000 50  0001 C CNN
+	1    5200 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 5650 5950 5900
 Wire Wire Line
 	4800 8750 5000 8750
 Wire Wire Line
@@ -3279,4 +3262,209 @@ Wire Wire Line
 Connection ~ 8000 8550
 Wire Wire Line
 	8000 8550 8000 8450
+Wire Wire Line
+	5200 6000 5200 6050
+Wire Wire Line
+	5300 6050 5200 6050
+Connection ~ 5200 6050
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 5CE2361C
+P 6700 6250
+F 0 "J13" V 6572 6330 50  0000 L CNN
+F 1 "Conn_01x02" V 6663 6330 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6700 6250 50  0001 C CNN
+F 3 "~" H 6700 6250 50  0001 C CNN
+	1    6700 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 5900 6700 5900
+Wire Wire Line
+	6700 5900 6700 6050
+Wire Wire Line
+	6600 6050 6600 5900
+Wire Wire Line
+	6600 5900 6700 5900
+Connection ~ 6700 5900
+$Comp
+L Connector_Generic:Conn_01x22 J12
+U 1 1 5CF0163B
+P 6100 4650
+F 0 "J12" H 6180 4642 50  0000 L CNN
+F 1 "Conn_01x22" H 6180 4551 50  0000 L CNN
+F 2 "" H 6100 4650 50  0001 C CNN
+F 3 "~" H 6100 4650 50  0001 C CNN
+	1    6100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3650 5850 3650
+Wire Wire Line
+	5900 3750 5850 3750
+Wire Wire Line
+	6800 3600 5850 3600
+Wire Wire Line
+	5850 3600 5850 3650
+Connection ~ 5850 3650
+Wire Wire Line
+	5850 3650 5900 3650
+Wire Wire Line
+	6800 3700 5850 3700
+Wire Wire Line
+	5850 3700 5850 3750
+Connection ~ 5850 3750
+Wire Wire Line
+	5850 3750 5800 3750
+Wire Wire Line
+	6800 3800 5850 3800
+Wire Wire Line
+	5850 3800 5850 3850
+Connection ~ 5850 3850
+Wire Wire Line
+	5850 3850 5800 3850
+Wire Wire Line
+	6800 3900 5850 3900
+Wire Wire Line
+	5850 3900 5850 3950
+Connection ~ 5850 3950
+Wire Wire Line
+	5850 3950 5900 3950
+Wire Wire Line
+	6800 4000 5850 4000
+Wire Wire Line
+	5850 4000 5850 4050
+Connection ~ 5850 4050
+Wire Wire Line
+	5850 4050 5800 4050
+Wire Wire Line
+	6800 4100 5850 4100
+Wire Wire Line
+	5850 4100 5850 4150
+Connection ~ 5850 4150
+Wire Wire Line
+	5850 4150 5900 4150
+Wire Wire Line
+	6800 4200 5850 4200
+Wire Wire Line
+	5850 4200 5850 4250
+Connection ~ 5850 4250
+Wire Wire Line
+	5850 4250 5800 4250
+Wire Wire Line
+	6800 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4350
+Connection ~ 5850 4350
+Wire Wire Line
+	5850 4350 5900 4350
+Wire Wire Line
+	6800 4400 5850 4400
+Wire Wire Line
+	5850 4400 5850 4450
+Connection ~ 5850 4450
+Wire Wire Line
+	5850 4450 5800 4450
+Wire Wire Line
+	6800 4500 5850 4500
+Wire Wire Line
+	5850 4500 5850 4550
+Connection ~ 5850 4550
+Wire Wire Line
+	5850 4550 5900 4550
+Wire Wire Line
+	6800 4600 5850 4600
+Wire Wire Line
+	5850 4600 5850 4650
+Connection ~ 5850 4650
+Wire Wire Line
+	5850 4650 5800 4650
+Wire Wire Line
+	6800 4700 5850 4700
+Wire Wire Line
+	5850 4700 5850 4750
+Connection ~ 5850 4750
+Wire Wire Line
+	5850 4750 5800 4750
+Wire Wire Line
+	6800 4800 5850 4800
+Wire Wire Line
+	5850 4800 5850 4850
+Connection ~ 5850 4850
+Wire Wire Line
+	5850 4850 5900 4850
+Wire Wire Line
+	6800 4900 5850 4900
+Wire Wire Line
+	5850 4900 5850 4950
+Connection ~ 5850 4950
+Wire Wire Line
+	5850 4950 5800 4950
+Wire Wire Line
+	6800 5000 5850 5000
+Wire Wire Line
+	5850 5000 5850 5050
+Connection ~ 5850 5050
+Wire Wire Line
+	5850 5050 5900 5050
+Wire Wire Line
+	6800 5100 5850 5100
+Wire Wire Line
+	5850 5100 5850 5150
+Connection ~ 5850 5150
+Wire Wire Line
+	5850 5150 5800 5150
+Wire Wire Line
+	6800 5200 5850 5200
+Wire Wire Line
+	5850 5200 5850 5250
+Connection ~ 5850 5250
+Wire Wire Line
+	5850 5250 5900 5250
+Wire Wire Line
+	6800 5300 5850 5300
+Wire Wire Line
+	5850 5300 5850 5350
+Connection ~ 5850 5350
+Wire Wire Line
+	5850 5350 5800 5350
+Wire Wire Line
+	6800 5400 5850 5400
+Wire Wire Line
+	5850 5400 5850 5450
+Connection ~ 5850 5450
+Wire Wire Line
+	5850 5450 5900 5450
+Wire Wire Line
+	6800 5500 5850 5500
+Wire Wire Line
+	5850 5500 5850 5550
+Connection ~ 5850 5550
+Wire Wire Line
+	5850 5550 5800 5550
+Wire Wire Line
+	6800 5600 5850 5600
+Wire Wire Line
+	5850 5600 5850 5650
+Connection ~ 5850 5650
+Wire Wire Line
+	5850 5650 5800 5650
+Wire Wire Line
+	6800 5700 5850 5700
+Wire Wire Line
+	5850 5700 5850 5750
+Connection ~ 5850 5750
+Wire Wire Line
+	5850 5750 5900 5750
+$Comp
+L Device:CP CP2
+U 1 1 5DAFEC86
+P 2600 10750
+F 0 "CP2" H 2625 10850 50  0000 L CNN
+F 1 "4u7" H 2625 10650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2638 10600 50  0001 C CNN
+F 3 "" H 2600 10750 50  0001 C CNN
+	1    2600 10750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
